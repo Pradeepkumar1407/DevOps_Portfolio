@@ -1,0 +1,29 @@
+/* Dark Mode */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark header {
+  background: #020617;
+}
+
+body.dark section {
+  background: transparent;
+}
+
+body.dark .skills li,
+body.dark .project {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+#toggle {
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

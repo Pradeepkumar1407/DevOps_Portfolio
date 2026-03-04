@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pradeepkumar R | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+  <h1>Pradeepkumar R</h1>
+  <p>AWS DevOps Engineer | Kubernetes | CI/CD | EKS</p>
+
+  <div class="links">
+    <a href="https://github.com/yourname" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+    <a href="mailto:your.email@email.com">Email</a>
+  </div>
+
+  <!-- Dark mode button -->
+  <button id="toggle">🌙 Dark Mode</button>
+</header>
+
+<section>
+  <h2>👋 About Me</h2>
+  <p>
+    DevOps Engineer with hands-on experience in AWS, Kubernetes, Docker,
+    CI/CD pipelines, and production-grade cloud-native systems.
+  </p>
+</section>
+
+<section>
+  <h2>🛠 Skills</h2>
+  <ul class="skills">
+    <li>AWS (EKS, EC2, ECR, IAM)</li>
+    <li>Docker & Kubernetes</li>
+    <li>CI/CD (GitHub Actions, Jenkins)</li>
+    <li>Terraform & IaC</li>
+    <li>Prometheus, Grafana</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🚀 Projects</h2>
+
+  <div class="project">
+    <h3>3-Tier Application on EKS</h3>
+    <p>
+      Production-grade Kubernetes application with Ingress, HPA,
+      Cluster Autoscaler, and secure CI/CD using IRSA.
+    </p>
+    <a href="#">View on GitHub →</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Pradeepkumar R</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById("toggle");
+  const body = document.body;
+
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+  }
+
+  toggle.onclick = () => {
+    body.classList.toggle("dark");
+    localStorage.setItem(
+      "theme",
+      body.classList.contains("dark") ? "dark" : "light"
+    );
+  };
+</script>
+
+</body>
+</html>
